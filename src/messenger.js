@@ -9,6 +9,8 @@ window.addEventListener('message', function (event) {
 	}
 	chrome.runtime.sendMessage({
 		action : 'pageToFiddle',
-		html : message.html
+		html : message.html,
+		scriptLinks: message.scriptLinks,
+		cssLinks: message.cssLinks
 	});
 });
