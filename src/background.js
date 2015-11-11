@@ -186,8 +186,8 @@ function pageToFiddle(request, sender) {
 													 '";window["css"] = "' + encodeURI(allStyles) + '";window["resources"] = "' + encodeURI(externResources) + '";'});
 	
 	openerIds.push(sender.tab.id);
-	window.setTimeout(
-	chrome.tabs.onCreated.addListener(tabCreated);
+	//window.setTimeout();
+	//chrome.tabs.onCreated.addListener(tabCreated);
 	chrome.tabs.executeScript(sender.tab.id, {
 		file : 'form.js'
 	},

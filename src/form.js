@@ -30,6 +30,7 @@ function addForm() {
 	document.body.appendChild(formDiv);
 	populateValues();
 	document.getElementById('jsfiddle-form').submit();
+	document.body.removeChild(formDiv);
 }
 
 addForm();
